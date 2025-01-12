@@ -3,14 +3,14 @@ import polars as pl
 
 def extract_articles_df() -> pl.DataFrame:
     return pl.read_csv(
-        "https://repo.hops.works/dev/jdowling/h-and-m/articles.csv",
+        "/workspaces/realtime-personalized-recommender/data/articles.csv",
         try_parse_dates=True,
     )
 
 
 def extract_customers_df() -> pl.DataFrame:
     return pl.read_csv(
-        "https://repo.hops.works/dev/jdowling/h-and-m/customers.csv",
+        "/workspaces/realtime-personalized-recommender/data/customers.csv",
         try_parse_dates=True,
     )
 
